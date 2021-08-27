@@ -3,7 +3,7 @@
 # 14/07/2021
 
 # --------------- DÉBUT COUCHE OS -------------------
-FROM debian:stable-slim
+FROM debian:buster-slim
 # --------------- FIN COUCHE OS ---------------------
 
 
