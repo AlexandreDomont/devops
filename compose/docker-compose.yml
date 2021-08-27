@@ -12,17 +12,11 @@ services:
     volumes:
       - ./docker-entrypoint.sh:/usr/local/bin/docker-entrypoint.sh
 
-
-    restart: always
     networks:
       - proxy
 
 volumes:
-  devops1_data: {}
   devops1_db: {}
-  devops1_ap: {}
-  devops1_bck: {}
-
 
 networks:
   proxy:
