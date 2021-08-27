@@ -1,0 +1,30 @@
+version: "3.9"
+    
+services:
+
+  wordpress:
+    container_name: w1.doo.ovh 
+    image: devsops:1
+    ports:
+      - 220:222
+      - 8888:80    
+
+    volumes:
+      - ./docker-entrypoint.sh:/usr/local/bin/docker-entrypoint.sh
+
+
+    restart: always
+    networks:
+      - proxy
+
+volumes:
+  devops1_data: {}
+  devops1_db: {}
+  devops1_ap: {}
+  devops1_bck: {}
+
+
+networks:
+  proxy:
+    name: proxy
+
